@@ -18,26 +18,15 @@
      ```
      irm https://get.activated.win | iex
      ```
+	 If the above is blocked (by ISP/DNS), try this (needs updated Windows 10 or 11):  
+	 ```
+	 iex (curl.exe -s --doh-url https://1.1.1.1/dns-query https://get.activated.win | Out-String)
+	 ```
    - For **Windows 7** and later:
      ```
      iex ((New-Object Net.WebClient).DownloadString('https://get.activated.win'))
      ```
-
-<details>
-
-<summary>Script not launching❓Click here for info.</summary>
-
----
-
-- If the above is blocked (by ISP/DNS), try this (needs **updated Windows 10 or 11**):
-  ```
-  iex (curl.exe -s --doh-url https://1.1.1.1/dns-query https://get.activated.win | Out-String)
-  ```
-- If that fails or you have an older Windows, use the below-listed Method 2.
-
----
-
-</details>
+	- **Script not launching❓Use the below-listed Method 2.**
 
 3. The activation menu will appear. **Choose the green-highlighted options** to activate Windows or Office.
 
@@ -47,20 +36,10 @@
 
 ### Method 2 - Traditional (Windows Vista and later)
 
-<details>
-  <summary>Click here to view</summary>
-  
-1.   Download the file using one of the links below:  
-`https://github.com/massgravel/Microsoft-Activation-Scripts/archive/refs/heads/master.zip`  
-or  
-`https://git.activated.win/massgrave/Microsoft-Activation-Scripts/archive/master.zip`
-2.   Right-click on the downloaded zip file and extract it.
-3.   In the extracted folder, find the folder named `All-In-One-Version`.
-4.   Run the file named `MAS_AIO.cmd`.
-5.   You will see the activation options. Follow the on-screen instructions.
-6.   That's all.
-
-</details>
+1.   Download the script: [**MAS_AIO.cmd**](https://dev.azure.com/massgrave/Microsoft-Activation-Scripts/_apis/git/repositories/Microsoft-Activation-Scripts/items?path=/MAS/All-In-One-Version-KL/MAS_AIO.cmd&download=true) or the [full ZIP](https://dev.azure.com/massgrave/Microsoft-Activation-Scripts/_apis/git/repositories/Microsoft-Activation-Scripts/items?$format=zip).
+2.   Run the file named `MAS_AIO.cmd`.
+3.   You will see the activation options. Follow the on-screen instructions.
+4.   That's all.
 
 ---
 
